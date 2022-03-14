@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  Essential META Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Paytren, Redesign">
+    <meta name="description" content="Paytren Landing Page (Redesign by Noramalist. Coded by Aditya)">
+    <meta name="author" content="Aditya Wilanda">
+    <meta property="og:title" content="Paytren Landing Page">
+    <meta property="og:description" content="Paytren Landing Page (Redesign by Noramalist. Coded by Aditya)">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aditwilanda.xyz/portfolio/paytren/public">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Paytren</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../public/assets/img/logo-paytren-only-orange.svg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/kit.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="fade-in">
+    
+    <!-- Hero -->
+    <div>
+        <div class="w-full h-screen bg-no-repeat bg-cover" style="background-image: url('../public/assets/img/hero-bg.svg');">
+            <div class="w-full h-screen bg-[#FF671B] bg-opacity-80">
+                <div class="relative pt-2 px-4 sm:px-6 lg:px-16">
+
+                    <!-- Navbar -->
+                    <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Navbar">
+                        <div class="container m-auto flex justify-between items-center">
+                            <img class="relative invisible sm:visible pt-5 px-4" src="../public/assets/img/logo-paytren.svg">
+                            <img class="absolute left-0 top-0 sm:hidden pt-5 px-4" src="../public/assets/img/logo-paytren-only.svg" alt="">
+                            <ul class="hidden md:flex items-center pt-5 pr-10 text-base cursor-pointer" style="font-size: large; font-family: 'Noto Sans', sans-serif;">
+                                <li class="py-4 px-6 text-white hover:text-gray-900">Aplikasi</li>
+                                <li class="py-4 px-6 text-white hover:text-gray-900">News</li>
+                                <li class="py-4 px-6 text-white hover:text-gray-900">FAQ</li>
+                                <li class="py-4 px-6 text-white hover:text-gray-900">Merchant QRIS</li>
+                            </ul>
+                        </div>
+
+                    <!-- Hamburger -->
+                    <div class="absolute top-0 right-0 mr-4 bg-white rounded-xl px-3 py-3 mt-8 md:hidden">
+                        <div class="flex flex-row-reverse">
+                            <div class="flex justify-between">
+                                
+                                <!-- Mobile menu button -->
+                                <div class="md:hidden flex items-center">
+                                    <button class="outline-none mobile-menu-button">
+                                    <svg class="block w-8 h-8 text-[#FF671B] hover:text-[#101820] transition duration-300"
+                                        x-show="!showMenu"
+                                        fill="none"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                                    </svg>
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mobile menu -->
+                        <div class="hidden mobile-menu text-center">
+                            <ul class="text-base mt-2" style="font-size: large; font-family: 'Noto Sans', sans-serif;">
+                                <li class="py-2 px-1 font-bold text-gray-900 hover:text-[#FF671B]"><a href="">Aplikasi</a></li>
+                                <li class="py-2 px-1 font-bold text-gray-900 hover:text-[#FF671B]"><a href="">News</a></li>
+                                <li class="py-2 px-1 font-bold text-gray-900 hover:text-[#FF671B]"><a href="">FAQ</a></li>
+                                <li class="py-2 px-1 font-bold text-gray-900 hover:text-[#FF671B]"><a href="">Merchant QRIS</a></li>
+                            </ul>
+                        </div>
+                        <script>
+                            const btn = document.querySelector("button.mobile-menu-button");
+                            const menu = document.querySelector(".mobile-menu");
+            
+                            btn.addEventListener("click", () => {
+                                menu.classList.toggle("hidden");
+                            });
+                        </script>
+                    </div>
+                    </nav>
+                    
+                    <!-- Hero Main -->
+                        <main class="mt-40 mx-auto px-4 sm:mt-96 sm:px-4 md:mt-96 lg:px-4 xl:mt-72">
+                            <div class="text-center sm:text-center lg:text-left">
+                                    <h1 class="text-white font-bold" style="font-family: 'Noto Sans', sans-serif; font-size: 40px;">
+                                        <span class="block xl:inline">Bayar ini itu jadi mudah</span>
+                                    </h1>
+                                    <h1 class="text-white font-bold" style="font-family: 'Noto Sans', sans-serif; font-size: 40px;">
+                                        <span class="block xl:inline">dengan Paytren</span>
+                                    </h1>
+                                        <p class="mt-3 text-white sm:mt-3 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-3 md:text-xl lg:mx-0" style="font-family: 'Noto Sans', sans-serif; font-size: 20px;">Dengan paytren, anda tinggal membayar</p>
+                                        <p class="mt-1 text-white sm:mt-1 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-1 md:text-xl lg:mx-0" style="font-family: 'Noto Sans', sans-serif; font-size: 20px;">melalui ponsel anda</p>
+                                    <div class="mt-8 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                                        <div>
+                                            <a href="#Selengkapnya" class="items-center justify-center py-4 rounded-[20px] text-[#FF671B] bg-white font-bold hover:bg-[#101820] hover:text-[#FF671B] transition duration-300 px-14 sm:px-14 md:px-14 lg:px-14" style="font-family: 'Noto Sans', sans-serif; font-size: 20px;"> Selengkapnya </a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </main>
+                </div>
+                <div class="flex flex-row-reverse invisible xl:visible">
+                    <div class="-mt-96">
+                            <img class="object-none object-right" src="../public/assets/img/hero-side.svg">
+                    </div>
+                </div>
+                <div class="flex justify-center invisible lg:visible gap-1 lg:mt-16 xl:mt-20">
+                    <div class="md:w-2 md:h-2 lg:w-4 lg:h-4 rounded-full bg-white hover:bg-white bg-opacity-40 hover:bg-opacity-100"></div>
+                    <div class="md:w-8 md:h-2 lg:w-14 lg:h-4 rounded-full bg-white"></div>
+                    <div class="md:w-2 md:h-2 lg:w-4 lg:h-4 rounded-full bg-white hover:bg-white bg-opacity-40 hover:bg-opacity-100"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <a id="Selengkapnya"></a>
+    <!-- Contents 1 -->
+    <div class="container md:mx-auto sm:mx-auto relative mt-24 px-16 sm:px-4 lg:px-24">
+        <div class="text-center sm:text-center md:text-center lg:text-center">
+            <h1 class="text-gray-900 font-bold" style="font-family: 'Noto Sans', sans-serif; font-size: 40px;">
+                <span class="block xl:inline">Mengapa Pakai Paytren</span>
+            </h1>
+            <p class="mt-5 text-gray-500" style="font-family: 'Noto Sans', sans-serif; font-size: 20px;">Kami menawarkan manfaat dan keunggulan lebih agar setiap transaksi Anda menjadi lebih bernilai.</p>
+        </div>
+
+        <!-- NAC -->
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-16 lg:-mx-10 lg:gap-20 mt-16 xl:mt-20 text-center">
+            <div class="flex flex-col items-center">
+                <img src="../public/assets/img/icon-21.svg" alt="">
+                <p class="text-gray-900 font-bold" style="font-family: 'Noto Sans', sans-serif; font-size: 20px;">Mudah & Efisien</p>
+                <p class="text-gray-500 mt-4 lg:mx-16" style="font-family: 'Noto Sans', sans-serif; font-size: 16px;">Cukup dengan satu aplikasi dalam 
+                    satu genggaman, seluruh tagihan 
+                    dapat dilakukan secara cepat.
+                </p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="../public/assets/img/icon-22.svg" alt="">
+                <p class="text-gray-900 font-bold" style="font-family: 'Noto Sans', sans-serif; font-size: 20px;">Keuntungan Transaksi</p>
+                <p class="text-gray-500 mt-4 lg:mx-20" style="font-family: 'Noto Sans', sans-serif; font-size: 16px;">Semakin sering bertransaksi, semakin banyak bagi hasil yang didapatkan.
+                </p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="../public/assets/img/icon-23.svg" alt="">
+                <p class="text-gray-900 font-bold" style="font-family: 'Noto Sans', sans-serif; font-size: 20px;">Perkaya Wawasan & Edukasi</p>
+                <p class="text-gray-500 mt-4 lg:mx-16" style="font-family: 'Noto Sans', sans-serif; font-size: 16px;">Paytren senantiasa berbagi aspirasi untuk selalu menginspirasi dan memperkaya edukasi.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contents 2 -->
+    <div class="container md:mx-auto sm:mx-auto mt-32 xl:mt-40 px-16 sm:px-4 lg:px-24">
+        <div class="text-center sm:text-center md:text-center lg:text-center">
+            <h1 class="text-gray-900 font-bold" style="font-family: 'Noto Sans', sans-serif; font-size: 40px;">
+                <span class="block xl:inline">Sedekah, Transfer, dan Bayar Tagihan Menjadi Mudah</span>
+            </h1>
+        </div>
+
+        <!-- Cards -->
+        <div class="p-0 mt-28 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-20 xl:gap-20 lg:gap-10 md:gap-6">
+            <!--Card 1-->
+            <div class="rounded-[30px] overflow-visible shadow-md text-center">
+                <div class="flex flex-col items-center">
+                    <div class="rounded-[20px] overflow-hidden shadow-md -mt-10 h-24 w-24 flex flex-col items-center">
+                        <img src="../public/assets/img/icon-31.svg" class="mt-6" alt="">
+                    </div>
+                </div>
+                    <div class="px-6 py-4 pt-10">
+                        <div class="font-bold mb-2" style="font-family: 'Noto Sans', sans-serif; font-size: 24px;">Bayar Sedekah</div>
+                            <p class="text-gray-500 text-base lg:mx-6 mt-8" style="font-family: 'Noto Sans', sans-serif; font-size: 16px;">
+                                Bayar sedekah, wakaf atau zakat tanpa repot dengan nominal berapapun yang kamu mau. Temukan juga QR Masjid atau tempat ibadah disekitar kamu untuk dapat langsung sedekah non tunai.
+                            </p>
+                    </div>
+                    <div class="px-6 pt-2 pb-11 sm:mt-2 md:mt-0 lg:mt-0 xl:mt-2">
+                        <a href="" class="text-[#FF671B] hover:text-gray-900" style="font-family: 'Noto Sans', sans-serif; font-size: 16px;"> Baca Selengkapnya </a>
+                    </div>
+            </div>
+
+            <!--Card 2-->
+            <div class="rounded-[30px] overflow-visible shadow-md text-center">
+                <div class="flex flex-col items-center">
+                    <div class="rounded-[20px] overflow-hidden shadow-md -mt-10 h-24 w-24 flex flex-col items-center">
+                        <img src="../public/assets/img/icon-32.svg" class="mt-6" alt="">
+                    </div>
+                </div>
+                    <div class="px-6 py-4 pt-10">
+                        <div class="font-bold mb-2" style="font-family: 'Noto Sans', sans-serif; font-size: 24px;">Transfer</div>
+                            <p class="text-gray-500 text-base lg:mx-2 mt-8" style="font-family: 'Noto Sans', sans-serif; font-size: 16px;">
+                                Nikmati kemudahan mengirim saldo ke keluarga atau teman sesama pengguna Paytren.
+                            </p>
+                    </div>
+                    <div class="px-6 pt-2 pb-11 sm:mt-2 md:mt-24 lg:mt-36 xl:mt-20">
+                        <a href="" class="text-[#FF671B] hover:text-gray-900" style="font-family: 'Noto Sans', sans-serif; font-size: 16px;"> Baca Selengkapnya </a>
+                    </div>
+            </div>
+
+            <!--Card 3-->
+            <div class="rounded-[30px] overflow-visible shadow-md text-center">
+                <div class="flex flex-col items-center">
+                    <div class="rounded-[20px] overflow-hidden shadow-md -mt-10 h-24 w-24 flex flex-col items-center">
+                        <img src="../public/assets/img/icon-33.svg" class="mt-6" alt="">
+                    </div>
+                </div>
+                    <div class="px-6 py-4 pt-10">
+                        <div class="font-bold mb-2" style="font-family: 'Noto Sans', sans-serif; font-size: 24px;">Bayar Tagihan</div>
+                            <p class="text-gray-500 text-base lg:mx-2 mt-8" style="font-family: 'Noto Sans', sans-serif; font-size: 16px;">
+                                Rasakan kemudahan bayar tagihan dan kebutuhan kamu di mana pun kamu berada tanpa repot.
+                            </p>
+                    </div>
+                    <div class="px-6 pt-2 pb-11 sm:mt-2 md:mt-24 lg:mt-36 xl:mt-20">
+                        <a href="" class="text-[#FF671B] hover:text-gray-900" style="font-family: 'Noto Sans', sans-serif; font-size: 16px;"> Baca Selengkapnya </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contents 3 -->
+    <div class="container md:mx-auto sm:mx-auto mt-32 lg:mt-32 px-16 sm:px-4 lg:px-24">
+        <div class="text-center sm:text-center md:text-center lg:text-center">
+            <h1 class="text-gray-900 font-bold" style="font-family: 'Noto Sans', sans-serif; font-size: 40px;">
+                <span class="block xl:inline">Merchant Kami</span>
+            </h1>
+        </div>
+
+        <div class="grid justify-items-center sm:grid-cols-3 gap-2 sm:gap-20 mt-20 text-center">
+            <div class="sm:mt-1 md:mt-2 lg:mt-2">
+                <img src="../public/assets/img/icon-41.svg" alt="">
+            </div>
+            <div class="sm:-mt-10 md:-mt-12 lg:-mt-14 xl:-mt-20">
+                <img src="../public/assets/img/icon-42.svg" alt="">
+            </div>
+            <div class="-mt-10 sm:mt-0">
+                <img src="../public/assets/img/icon-43.svg" alt="">
+            </div>
+        </div>
+
+        <div class="flex justify-center invisible md:visible gap-1 md:-mt-8 xl:-mt-10">
+            <div class="md:w-2 md:h-2 lg:w-4 lg:h-4 rounded-full bg-[#7A7A7A] hover:bg-[#FF671B] bg-opacity-40"></div>
+            <div class="md:w-8 md:h-2 lg:w-14 lg:h-4 rounded-full bg-[#FF671B]"></div>
+            <div class="md:w-2 md:h-2 lg:w-4 lg:h-4 rounded-full bg-[#7A7A7A] hover:bg-[#FF671B] bg-opacity-40"></div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-28 sm:mt-40 lg:mt-56">         
+            <footer class="p-8 sm:p-6 md:px-10 lg:px-24 pt-14 sm:pt-14 md:py-16 lg:py-16 bg-[#101820]">
+                <div class="md:flex md:justify-between">
+                    <div class="mb-6 md:mb-0">
+                        <div class="flex items-center sm:mr-10 md:mr-20">
+                            <img src="../public/assets/img/logo-paytren.svg" alt="Paytren Logo">
+                        </div>
+                        <div class="flex lg:w-[21rem] sm:mr-10 md:mr-20">
+                            <p class="mt-10 text-white" style="font-family: 'Noto Sans', sans-serif; font-size: 16px;">PT. Veritra Sentosa Internasional
+                            <span class="lg:-mr-2 flex">The Suites Metro Blok E5-E7</span>
+                            <span class="lg:-mr-2 flex">Jln.Soekarno Hatta No.693 – RT. 06 / RW.06</span>
+                            <span class="lg:-mr-2 flex">Kelurahan Jatisari Kecamatan Buah Batu Bandung 40286</span></p>
+                        </div>
+                        
+                    </div>
+                    <div class="grid grid-cols-2 gap-8 sm:gap-20 sm:grid-cols-4">
+                        <div style="font-family: 'Noto Sans', sans-serif;">
+                            <h2 class="mb-6 font-bold text-white" style="font-size: 20px;">Aplikasi</h2>
+                            <ul class="text-white" style="font-size: 16px;">
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Download</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Top Up</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Bayar-bayar</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Transfer & Tarik Tunai</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Sedekah</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Upgrade</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="font-family: 'Noto Sans', sans-serif;">
+                            <h2 class="mb-6 font-bold text-white" style="font-size: 20px;">Company</h2>
+                            <ul class="text-white" style="font-size: 16px;">
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">About Us</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Partnership</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Why Us</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Brand Guideline</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Karir</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="font-family: 'Noto Sans', sans-serif;">
+                            <h2 class="mb-6 font-bold text-white" style="font-size: 20px;">Affiliate</h2>
+                            <ul class="text-white" style="font-size: 16px;">
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Paytren Academy</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">BelanjaQu</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">PAM</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">TreniNet</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="font-family: 'Noto Sans', sans-serif;">
+                            <h2 class="mb-6 font-bold text-white" style="font-size: 20px;">Website</h2>
+                            <ul class="text-white" style="font-size: 16px;">
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">FAQ</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Sitemap</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Blog</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Terms & Condition</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a href="" class="hover:text-[#FF671B]">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sm:flex xl:flex-row-reverse sm:items-center sm:justify-start mt-12 md:mt-12 lg:mt-8 xl:mt-4 lg:mr-9">
+                    <div class="flex flex-col mt-4 sm:justify-center sm:mt-0">
+                        <div class="flex">
+                            <h2 class="font-bold text-white" style="font-family: 'Noto Sans', sans-serif; font-size: 20px;">Cari Tau Berita Terbaru</h2>
+                        </div>
+                        <div class="flex mt-2 gap-2">
+                            <a href="" class="text-white hover:text-[#FF671B]">
+                            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+                            </a>
+                            <a href="" class="text-white hover:text-[#FF671B]">
+                            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg>
+                            </a>
+                            <a href="" class="text-white hover:text-[#FF671B]">
+                            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sm:flex xl:flex-row-reverse sm:items-center sm:justify-start mt-10 md:mt-10 xl:mt-12 xl:mr-2">
+                    <div class="flex flex-col mt-4">
+                        <div class="flex">
+                            <h2 class="font-bold text-white" style="font-family: 'Noto Sans', sans-serif; font-size: 20px;">Unduh Aplikasi Paytren di</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sm:flex xl:flex-row-reverse sm:justify-start mt-0 xl:-mr-9">
+                    <div class="flex mt-4 gap-2">
+                        <a href="">
+                            <img src="../public/assets/img/logo-google-play.svg" alt="Google Play">
+                        </a>
+                        <a href="">
+                            <img src="../public/assets/img/logo-apple-store.svg" alt="App Store">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mt-10 xl:-mt-20 mb-6">
+                    <div class="flex">
+                        <p class="text-white" style="font-family: 'Noto Sans', sans-serif; font-size: 12px;">©2019 PT. Veritra Sentosa Internasional</p>
+                    </div>
+                    <div class="flex mt-4">
+                        <img src="../public/assets/img/logo-bank-indonesia.svg" alt="">
+                    </div>  
+                </div>
+                
+                <div class="mt-10">
+                    <div class="flex justify-center sm:justify-start md:-mb-10">
+                        <p class="text-white hover:text-[#FF671B]" style="font-family: 'Noto Sans', sans-serif; font-size: 12px;">Redesign by Noramalist. Coded by Aditya</p>
+                    </div>
+                </div>
+            </footer>
+    </div>
+
+</body>
+</html>
